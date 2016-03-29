@@ -1,6 +1,6 @@
 {
   "name": "entry-empty-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extension of node event emitter. Providers information about entry and exit of key.",
   "main": "EntryEmptyEmitter.js",
   "scripts": {
