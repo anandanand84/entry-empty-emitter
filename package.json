@@ -1,0 +1,25 @@
+{
+  "name": "entry-empty-emitter",
+  "version": "1.0.0",
+  "description": "Extension of node event emitter. Providers information about entry and exit of key.",
+  "main": "EntryEmptyEmitter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandanand84/entry-empty-emitter.git"
+  },
+  "keywords": [
+    "Entry",
+    "exit",
+    "key",
+    "reentrant"
+  ],
+  "author": "Anand Aravindan <anand.anand84@gmail.com> (traderslab.in)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandanand84/entry-empty-emitter/issues"
+  },
+  "homepage": "https://github.com/anandanand84/entry-empty-emitter#readme"
+}
