@@ -42,4 +42,4 @@ EntryEmptyEmitter.prototype.getCount = function(key){
     return this.keys[key];
 };
 
-global.EntryEmptyEmitter = module.exports = new EntryEmptyEmitter();
+global.EntryEmptyEmitter = module.exports = EntryEmptyEmitter;
