@@ -32,14 +32,14 @@ EntryEmptyEmitter.prototype.remove = function(key){
 
 EntryEmptyEmitter.prototype.status = function(){
     return this.keys;
-}
+};
 
 EntryEmptyEmitter.prototype.reset = function(key){
     delete this.keys[key];
-}
+};
 
 EntryEmptyEmitter.prototype.getCount = function(key){
     return this.keys[key];
-}
+};
 
-module.exports = new EntryEmptyEmitter();
+global.EntryEmptyEmitter = module.exports = new EntryEmptyEmitter();

@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="import" href="entry-empty-emitter.html">
+</head>
+  <input id="text" type="text">
+  <button id="buttonAdd" onclick="btnClickAdd()">Add</button>
+  <button id="buttonRemove" onclick="btnClickRemove()">Remove</button>
+</body>
+<script>
+  EntryEmptyEmitter.on('entry', function(data){
+    console.log('Entry Triggered', data)
+  })
+  EntryEmptyEmitter.on('empty', function(data){
+    console.log('exit Triggered', data)
+  })
+
+  function btnClickAdd(){
+    var val = document.querySelector('#text').value;
+    EntryEmptyEmitter.add(val);
+  }
+
+  function btnClickRemove(){
+    var val = document.querySelector('#text').value;
+    EntryEmptyEmitter.remove(val);
+  }
+</script>
+</html>
