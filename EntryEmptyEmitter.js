@@ -7,11 +7,10 @@ const util = require('util');
 
 function EntryEmptyEmitter() {
     EventEmitter.call(this);
+    this.keys = {};
 }
 
 util.inherits(EntryEmptyEmitter, EventEmitter);
-
-EntryEmptyEmitter.prototype.keys = {};
 
 EntryEmptyEmitter.prototype.add = function(key){
     this.keys[key] ? this.keys[key]++ : (this.keys[key] = 1);
