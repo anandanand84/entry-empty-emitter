@@ -3,13 +3,25 @@
  */
 
 const EventEmitter = require('events');
-const util = require('util');
+
+function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor;
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+
 
 function EntryEmptyEmitter() {
     EventEmitter.call(this);
 }
 
-util.inherits(EntryEmptyEmitter, EventEmitter);
+inherits(EntryEmptyEmitter, EventEmitter);
 
 EntryEmptyEmitter.prototype.keys = {};
 
